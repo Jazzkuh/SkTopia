@@ -1,0 +1,6 @@
+name: SkTopia
+version: ${project.version}
+main: com.jazzkuh.sktopia.Main
+authors: [Jazzkuh]
+description: "A simple addon which provides a number of utility expressions and events for the MinetopiaSDB plugin!"
+depend: [MinetopiaSDB, Skript]
