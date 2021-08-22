@@ -78,7 +78,7 @@ public class ExprLevel extends SimpleExpression<Number> {
             } else if (mode == Changer.ChangeMode.REMOVE) {
                 sdbPlayer.setLevel(sdbPlayer.getLevel() - ((Number) delta[0]).intValue(), LevelChangeReason.API_CHANGED);
             } else if (mode == Changer.ChangeMode.DELETE || mode == Changer.ChangeMode.RESET) {
-                sdbPlayer.setLevel(0, LevelChangeReason.API_CHANGED);
+                sdbPlayer.setLevel(1, LevelChangeReason.API_CHANGED);
             }
         }
     }
