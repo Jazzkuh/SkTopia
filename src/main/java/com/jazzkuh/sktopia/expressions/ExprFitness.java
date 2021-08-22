@@ -80,7 +80,7 @@ public class ExprFitness extends SimpleExpression<Number> {
             } else if (mode == Changer.ChangeMode.REMOVE) {
                 sdbPlayer.getFitness().setTotalFitness(sdbPlayer.getFitness().getTotalFitness() - ((Number) delta[0]).intValue());
             } else if (mode == Changer.ChangeMode.DELETE || mode == Changer.ChangeMode.RESET) {
-                sdbPlayer.setLevel(0, LevelChangeReason.API_CHANGED);
+                sdbPlayer.getFitness().setTotalFitness(20);
             }
 
             API.updateScoreboard(basePlayer);
